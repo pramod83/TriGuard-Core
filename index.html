@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TriGuard Core — Data, Icon &amp; Audio Control (Magisk &amp; KernelSU Module)</title>
+  <meta name="description" content="TriGuard Core v1.0-Stable by Pramod Kumar is an open-source Magisk and KernelSU root module combining NetVault foreground firewall, IconCloak universal launcher icon hider for Vivo, OnePlus, Oppo, Xiaomi, and Samsung, and SoundHold strict per-stream volume locker.">
+  <meta name="keywords" content="TriGuard Core, Magisk module, KernelSU WebUI, NetVault firewall, IconCloak app hider, Vivo OnePlus launcher icon hider, SoundHold volume lock, Android 16 root module, Pramod Kumar">
+  <meta name="author" content="Pramod Kumar">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://pramod83.github.io/TriGuard-Core/">
+  <style>
+    * { box-sizing: border-box; }
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; line-height: 1.65; color: #1f2937; background: #f8fafc; margin: 0; padding: 0; }
+    header { background: #0f172a; color: #ffffff; padding: 42px 20px; text-align: center; }
+    header h1 { margin: 0 0 10px; font-size: 28px; }
+    header p { margin: 0 auto 20px; max-width: 680px; color: #cbd5e1; font-size: 16px; }
+    .btn { display: inline-block; background: #10b981; color: #06281e; font-weight: 700; text-decoration: none; padding: 12px 24px; border-radius: 8px; margin: 6px; }
+    .btn-sec { background: #334155; color: #f8fafc; }
+    main { max-width: 860px; margin: 28px auto; padding: 0 20px; }
+    .card { background: #ffffff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 24px; margin-bottom: 20px; }
+    h2 { color: #0f172a; margin-top: 0; font-size: 21px; border-bottom: 2px solid #e2e8f0; padding-bottom: 8px; }
+    h3 { color: #1e293b; margin-bottom: 6px; font-size: 17px; }
+    ul, ol { padding-left: 20px; }
+    li { margin-bottom: 8px; }
+    .badge { display: inline-block; background: #dcfce7; color: #166534; font-size: 12px; font-weight: 700; padding: 4px 10px; border-radius: 999px; margin-bottom: 12px; }
+    footer { text-align: center; padding: 24px; font-size: 13px; color: #64748b; }
+  </style>
+</head>
+<body>
+  <header>
+    <span class="badge">STABLE PRODUCTION RELEASE &bull; v1.0-Stable</span>
+    <h1>TriGuard Core — Data, Icon &amp; Audio Control</h1>
+    <p>An all-in-one, lightweight Magisk, KernelSU, and APatch WebUI module engineered by Pramod Kumar for complete foreground network privacy, universal launcher icon hiding, and strict hardware audio level locking.</p>
+    <a class="btn" href="https://github.com/pramod83/TriGuard-Core/releases/latest">Download Latest ZIP (v1.0-Stable)</a>
+    <a class="btn btn-sec" href="https://github.com/pramod83/TriGuard-Core">View Source on GitHub</a>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>Three Unified Control Engines in One WebUI</h2>
+      <h3>1. NetVault — Foreground-Only Internet Firewall</h3>
+      <p>NetVault dynamically manages Linux <code>iptables</code> and <code>ip6tables</code> rules so that mobile data and Wi-Fi access are granted strictly to the app currently visible on your screen. Background apps remain blocked from silent data drain unless explicitly whitelisted in the WebUI, and all non-whitelisted traffic pauses automatically when the screen turns off.</p>
+
+      <h3>2. IconCloak — Universal Launcher Icon Hider</h3>
+      <p>IconCloak hides all launcher entry activities of selected applications across Vivo (Funtouch OS), OnePlus (OxygenOS), Oppo (ColorOS), Realme, Xiaomi, Samsung, and Pixel launchers. An active background auto-relock watcher ensures Home button presses never unhide your locked apps, while background services, alarms, and push notifications continue operating normally.</p>
+
+      <h3>3. SoundHold — Strict Per-Stream Volume &amp; Ringer Locker</h3>
+      <p>SoundHold locks individual Android audio streams—Call, Ring, Media, Notification, and Alarm—at your chosen volume levels. When Ring lock is active above zero, SoundHold also prevents accidental silent or vibrate overrides, with instant single-stream lock buttons alongside one-tap Lock All and Unlock All controls.</p>
+    </section>
+
+    <section class="card">
+      <h2>Built-In Safety, Diagnostics &amp; OTA Updates</h2>
+      <ul>
+        <li><strong>Passive Anti-Bootloop Self-Guard:</strong> Uses non-blocking background execution and tracks only TriGuard Core's own boot state, automatically disabling the module if two consecutive boots fail before completion without interfering with third-party bootloop protectors.</li>
+        <li><strong>Live Diagnostic Action Button:</strong> Tapping the Action button inside Magisk Manager prints real-time status for the background daemon, NetVault firewall chain, locked hidden icon count, and locked audio streams.</li>
+        <li><strong>In-App OTA Updates:</strong> Configured with <code>pk-triguard-ota.json</code> so Magisk Manager automatically notifies users when a new stable version is released.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>How to Install &amp; Configure</h2>
+      <ol>
+        <li>Download <code>TriGuard-Core-v1.0-Stable.zip</code> from the official GitHub Releases page.</li>
+        <li>Open <strong>Magisk</strong> (v20.4+), <strong>KernelSU</strong>, or <strong>APatch</strong>, go to the <strong>Modules</strong> tab, and flash the ZIP file from storage.</li>
+        <li>Reboot your Android device to initialize the background engine.</li>
+        <li>Launch <strong>KSUWebUIStandalone</strong> or <strong>MMRL</strong> to manage NetVault, IconCloak, and SoundHold from one unified dashboard.</li>
+      </ol>
+    </section>
+  </main>
+
+  <footer>
+    <p>Created by <strong>Pramod Kumar</strong> &bull; Released under the open-source <strong>MIT License</strong> &bull; Module ID: <code>in.pramodkumar.triguardcore</code></p>
+  </footer>
+</body>
+</html>
