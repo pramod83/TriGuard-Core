@@ -18,4 +18,4 @@ An open-source, unified Android root control suite by **Pramod Kumar** featuring
 3. Open **KSUWebUIStandalone** or **MMRL** to configure **NetVault**, **IconCloak**, and **SoundHold**.
 
 ## License
-Released under the [MIT License](LICENSE) — Copyright (c) 2026 Pramod Kumar.
+Released under the [GNU General Public License v3.0](LICENSE) — Copyright (c) 2026 Pramod Kumar.
